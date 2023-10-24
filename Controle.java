@@ -30,7 +30,7 @@ public class Controle {
                    e só deixará emprestar os livros que não são */
             for (int i = 0; i < num; i++) {
                 int[] prazos = null;
-                Livro l = new Livro(codigo [i]);
+                Livro l = new Livro(prazos[i]);
                 //caso o livro não seja exemplar da biblioteca permite emprestar  
                 if (!l.verificaLivro()) {
                     livros.add(l);
